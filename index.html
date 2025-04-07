@@ -11,7 +11,7 @@
     <style>
         .hero {
             border: 1px solid white;
-            background-color: #245c60;
+            background: linear-gradient(#0097b2,#7ed957);
             color: white;
             text-align: center;
             width: 100%;
@@ -33,9 +33,9 @@
         .job-card {
             background: white;
             padding: 15px;
-            border-radius: 30px;
+            border-radius: 5px;
             width: 400px;
-            border: 1px solid black;
+            border: 1px solid #717273;
             text-align: left;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
@@ -44,21 +44,37 @@
             transition: 0.4s;
         }
         .job-card button {
-            background-color: #245c60;
+            background-color: #007468;
             color: white;
             border: none;
             padding: 11px 25px;
-            border-radius: 30px;
+            border-radius: 5px;
             cursor: pointer;
+        }    
+        .job-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
         }
-        .job-card button {
-            background-color: #245c60;
-            color: white;
-            border: none;
-            padding: 11px 25px;
-            border-radius: 30px;
-            cursor: pointer;
-        }       
+        .popular{
+            padding: 1rem 12rem;
+        }
+        .popular-search {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .popular-card {
+            background: #dfdfdf;
+            color: #545454;
+            padding: 0.2rem 1rem;
+            border-radius: 20px;
+        } 
+        .popular-card p{
+            text-align: center;
+        } 
+
     </style>
 </head>
 
@@ -75,10 +91,40 @@
 
     <section style="text-align: center;">
         <div class="hero">
-            <img src="img2.png" style="width:100%;">
+            <a href="Find.html"><img src="pic.png" width="100%"></a>
         </div>
-        <!-- <h2 style="text-align:center; padding: 20px;">งานที่น่าสนใจ</h2> -->
-        <h2 class="text-center p-4">งานที่น่าสนใจ</h2>
+        
+        <div class="popular">
+        <h3 class="text-start p-4">คำค้นหายอดฮิต</h3>
+        <div class="popular-search">
+            <div class="popular-card">
+                <p>พนักงานเสิร์ฟร้านอาหาร</p>
+            </div>
+            <div class="popular-card">
+                <p>พนักงานล้างจาน</p>
+            </div>
+            <div class="popular-card">
+                <p>พนักงานร้านกาแฟ</p>
+            </div>
+            <div class="popular-card">
+                <p>พนักงานPC</p>
+            </div>
+            <div class="popular-card">
+                <p>พนักงานล้างจาน</p>
+            </div>
+            <div class="popular-card">
+                <p>พนักงานPC</p>
+            </div>
+            <div class="popular-card">
+                <p>พนักงานเสิร์ฟร้านอาหาร</p>
+            </div>
+            <div class="popular-card">
+                <p style="color: #007468;">ดูเพิ่มเติม</p>
+            </div>
+        </div>
+    </div>
+
+        <h3 class="text-center p-4">งานพาร์ทไทม์ใกล้ฉัน</h3>
 
         <div class="job-list">
             <div class="job-card">
@@ -128,4 +174,3 @@
 </body>
 
 </html>
-
