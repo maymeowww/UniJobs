@@ -14,7 +14,7 @@
 
         .profile-container {
             display: flex;
-            justify-content: center; 
+            justify-content: center;
             align-items: center; 
             height: 85vh;
         }
@@ -75,12 +75,13 @@
             <a href="Profile.html">โปรไฟล์</a>
         </div>
     </div>
+    <h1 class="text-center my-4" style="font-weight: bold; font-size: 3rem;">โปรไฟล์</h1>
     <div class="profile-container mt-5">
         <div class="profile-card">
             <img id="profileImage" src="nonepic.png" alt="Profile Picture" class="profile-img">
             <div class="profile-info">
                 <label for="username" class="profile-label">Name :</label>
-                <h3><input type="text" id="username" placeholder="Username"></h3>
+                <h3><input type="text" id="name" placeholder="Username"></h3>
                 <label for="gender" class="profile-label">Gender :</label>
                 <h3>
                 <select id="gender" class="form-select">
@@ -132,9 +133,13 @@
             }
         });
 
-        
+        // บันทึกข้อมูล
         document.getElementById("saveBtn").addEventListener("click", function() {
-            
+            // ล็อกฟอร์มไม่ให้แก้ไขหลังจากบันทึก
+            document.querySelectorAll('.profile-info input, .profile-info select').forEach(el => {
+            el.style.fontWeight = 'bold';
+            el.style.color = '#000';
+                });
             document.getElementById("username").setAttribute("readonly", true);
             document.getElementById("email").setAttribute("readonly", true);
             document.getElementById("phone").setAttribute("readonly", true);
