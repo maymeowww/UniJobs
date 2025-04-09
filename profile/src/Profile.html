@@ -15,7 +15,7 @@
         .profile-container {
             display: flex;
             justify-content: center; 
-            align-items: center;
+            align-items: center; 
             height: 85vh;
         }
 
@@ -75,13 +75,22 @@
             <a href="Profile.html">โปรไฟล์</a>
         </div>
     </div>
-    
     <div class="profile-container mt-5">
         <div class="profile-card">
             <img id="profileImage" src="nonepic.png" alt="Profile Picture" class="profile-img">
             <div class="profile-info">
                 <label for="username" class="profile-label">Name :</label>
                 <h3><input type="text" id="username" placeholder="Username"></h3>
+                <label for="gender" class="profile-label">Gender :</label>
+                <h3>
+                <select id="gender" class="form-select">
+                <option value="">-- เลือกเพศ --</option>
+                <option value="male">ชาย</option>
+                <option value="female">หญิง</option>
+                <option value="other">อื่น ๆ</option>
+            </select>
+            </h3>
+
                 <label for="email" class="profile-label">Email :</label>
                 <h3><input type="text" id="email" placeholder="Su@silpakorn.edu"></h3>
                 <label for="phone" class="profile-label">Phone Number :</label>
@@ -89,7 +98,7 @@
                 <label for="address" class="profile-label">Address :</label>
                 <h3><input type="text" id="address" placeholder="112 nakorn pathom"></h3>
 
-                 
+                 <!-- ปุ่มอัปโหลดไฟล์ -->
                  <label for="resumeUpload" class="profile-label">Upload Resume :</label>
                  <input type="file" id="resumeUpload" class="form-control mt-2" accept=".pdf">
                  
@@ -123,7 +132,7 @@
             }
         });
 
-      
+        
         document.getElementById("saveBtn").addEventListener("click", function() {
             
             document.getElementById("username").setAttribute("readonly", true);
@@ -131,17 +140,19 @@
             document.getElementById("phone").setAttribute("readonly", true);
             document.getElementById("address").setAttribute("readonly", true);
             document.getElementById("resumeUpload").setAttribute("disabled", true);
+            document.getElementById("gender").setAttribute("disabled", true);
             alert("ข้อมูลถูกบันทึกแล้ว");
         });
 
-        
+        // แก้ไขข้อมูล
         document.getElementById("editBtn").addEventListener("click", function() {
-            
+            // เปิดให้แก้ไขข้อมูล
             document.getElementById("username").removeAttribute("readonly");
             document.getElementById("email").removeAttribute("readonly");
             document.getElementById("phone").removeAttribute("readonly");
             document.getElementById("address").removeAttribute("readonly");
             document.getElementById("resumeUpload").removeAttribute("disabled");
+            document.getElementById("gender").removeAttribute("disabled");
         });
     </script>
 
