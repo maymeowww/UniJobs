@@ -14,20 +14,20 @@
 
         .profile-container {
             display: flex;
-            justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
-            align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+            justify-content: center; 
+            align-items: center;
             height: 85vh;
         }
 
         .profile-card {
-            max-width: 900px; /* ขยายขนาดของกรอบ */
+            max-width: 900px; 
             background: white;
-            padding: 80px; /* เพิ่มพื้นที่ภายในกรอบ */
-            border-radius: 50px; /* ปรับให้มุมกรอบโค้งมากขึ้น */
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้กรอบเด่นขึ้น */
+            padding: 80px; 
+            border-radius: 50px; 
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); 
             display: flex;
             align-items: center;
-            gap: 50px; /* ระยะห่างระหว่างรูปกับข้อมูล */
+            gap: 50px; 
         }
 
         .profile-img {
@@ -58,7 +58,7 @@
             color: #b2adad;
         }
 
-        .btn-container {/* ปุ่มบันทึก */
+        .btn-container {
             display: flex;
             gap: 15px;
         }
@@ -89,7 +89,7 @@
                 <label for="address" class="profile-label">Address :</label>
                 <h3><input type="text" id="address" placeholder="112 nakorn pathom"></h3>
 
-                 <!-- ปุ่มอัปโหลดไฟล์ -->
+                 
                  <label for="resumeUpload" class="profile-label">Upload Resume :</label>
                  <input type="file" id="resumeUpload" class="form-control mt-2" accept=".pdf">
                  
@@ -123,9 +123,9 @@
             }
         });
 
-        // บันทึกข้อมูล
+      
         document.getElementById("saveBtn").addEventListener("click", function() {
-            // ล็อกฟอร์มไม่ให้แก้ไขหลังจากบันทึก
+            
             document.getElementById("username").setAttribute("readonly", true);
             document.getElementById("email").setAttribute("readonly", true);
             document.getElementById("phone").setAttribute("readonly", true);
@@ -134,9 +134,9 @@
             alert("ข้อมูลถูกบันทึกแล้ว");
         });
 
-        // แก้ไขข้อมูล
+        
         document.getElementById("editBtn").addEventListener("click", function() {
-            // เปิดให้แก้ไขข้อมูล
+            
             document.getElementById("username").removeAttribute("readonly");
             document.getElementById("email").removeAttribute("readonly");
             document.getElementById("phone").removeAttribute("readonly");
