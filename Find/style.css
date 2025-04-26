@@ -1,0 +1,171 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fafafb;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.header {
+  background-color: #245c60;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h2{
+  padding-left: 20px;
+  color: white;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #ecbb66;
+}
+
+footer {
+  background-color: #d1d2d2;
+  padding: 50px 0;
+  margin-top: auto; 
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+
+.footer-content {
+  width: 30%;
+  text-align: center;
+}
+
+h5 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-content p {
+  width: 180px;
+  margin: auto;
+  padding: 7px;
+}
+
+.footer-content ul {
+  text-align: center;
+  padding: 0;
+}
+
+.footer-content ul li {
+  list-style-type: none;
+  padding: 7px;
+}
+
+.footer-content ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-content ul li a:hover {
+  color: #ecbb66;
+}
+.footer-links {
+display: flex;
+justify-content: center;
+gap: 80px; 
+font-size: 16px;
+color: #333;
+}
+.search-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tags button {
+  margin: 5px;
+  padding: 8px 15px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+.job-list {
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+.job-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: 1px solid #d1d2d2;
+  margin-bottom: 30px;
+}
+
+.job-info {
+  flex: 1;
+  text-align: left;
+}
+
+.job-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background: white;
+  margin-right: 10px;
+}
+
+.job-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.apply-button {
+  padding: 10px 20px;
+  background-color: #f4b942;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
